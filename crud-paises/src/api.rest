@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/paises
+
+###
+POST http://localhost:3000/paises
+Content-Type: application/json
+
+{
+    "nombre":"Japon",
+    "capital":"Oosaka",
+    "poblacion":500000,
+    "moneda":"Yen",
+    "continente":"Asia"
+}
+
+###
+DELETE http://localhost:3000/paises/62e56b8d1d3268bc2516a1df
+
+###
+GET http://localhost:3000/paises/62e410414b17950658dbca16
+
+###
+PUT http://localhost:3000/paises/62e410414b17950658dbca16
+Content-Type: application/json
+
+{
+    "capital":"Ciudad de no Mexico",
+    "continente":"Centro America"
+}
